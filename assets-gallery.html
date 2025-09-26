@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Assets Gallery</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="" /><span>Carley’s Better Breakfast</span><small class="tag">v2</small></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a class="active" href="assets-gallery.html">Assets</a>
+      <a href="pitch-deck.html">Pitch Deck</a>
+      <a href="business-plan.html">Biz Plan</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1>Assets Gallery</h1>
+    <p class="muted">Add images to <code>assets/img/</code> and entries to <code>gallery.json</code>. No more code changes.</p>
+    <div id="gallery" class="grid cards-3"></div>
+  </section>
+
+  <!-- Simple image modal -->
+  <div id="imgModal" class="modal" onclick="closeImgModal()">
+    <div class="box" onclick="event.stopPropagation()">
+      <button class="close" onclick="closeImgModal()">×</button>
+      <img id="imgModalImg" alt="">
+      <div id="imgModalCap" class="muted"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer"><span id="year"></span> © Carley’s Better Breakfast</footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/gallery.js?v=2"></script>
+</body>
+</html>

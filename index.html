@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carley’s Better Breakfast — v2</title>
+
+  <!-- Base styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Leaflet (map) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="Carley’s Better Breakfast logo" />
+      <span>Carley’s Better Breakfast</span>
+      <small class="tag">v2</small>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="assets-gallery.html">Assets</a>
+      <a href="pitch-deck.html">Pitch Deck</a>
+      <a href="business-plan.html">Biz Plan</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Scratch-made breakfast. Fast, friendly, farm-forward.</h1>
+      <p>Modular sandwiches on biscuit, pancake, waffle, or tortilla — farm-egg, bacon/sausage/ham, American or cheddar.</p>
+      <div class="actions">
+        <a class="btn primary" href="menu.html">Explore Menu</a>
+        <a class="btn" href="https://tonydmaker.github.io/carleys-better-breakfast/index.html#menu" target="_blank" rel="noopener">Open v1 Builder</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="assets/img/waffle.png" alt="Waffle Sandwich" />
+    </div>
+  </section>
+
+  <!-- What’s new -->
+  <section class="section">
+    <h2>What’s new in v2</h2>
+    <div class="grid cards-3">
+      <article class="card">
+        <h3>Live Map</h3>
+        <p>Find our truck on the map below. Mobile-first, Leaflet powered.</p>
+      </article>
+      <article class="card">
+        <h3>Asset Gallery</h3>
+        <p>Every image in one place. Add files, edit <code>gallery.json</code>, done.</p>
+      </article>
+      <article class="card">
+        <h3>Docs, Wired Up</h3>
+        <p>Pitch deck & business plan viewable right in the browser.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Social (uses your existing modal script later) -->
+  <section class="section">
+    <h2>Social</h2>
+    <div class="social-actions">
+      <a class="btn" href="#" data-social="Instagram">Instagram</a>
+      <a class="btn" href="#" data-social="Facebook">Facebook</a>
+      <a class="btn" href="#" data-social="TikTok">TikTok</a>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section">
+    <h2>Find Us</h2>
+    <p>Parked along SR-82 (mock location). Hours vary—watch socials for pop-ups.</p>
+    <div id="map" class="map"></div>
+    <div class="map-links">
+      <a class="btn" target="_blank" rel="noopener" href="https://maps.google.com/?q=26.6409,-81.8723">Open in Google Maps</a>
+      <a class="btn" target="_blank" rel="noopener" href="https://maps.apple.com/?ll=26.6409,-81.8723&q=Carley’s Better Breakfast">Open in Apple Maps</a>
+      <a id="center-me" class="btn" href="#">Center on Me</a>
+    </div>
+  </section>
+
+  <footer class="site-footer"><span id="year"></span> © Carley’s Better Breakfast</footer>
+
+  <!-- JS: base + Leaflet + map + socials -->
+  <script src="assets/js/app.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="assets/js/map.js?v=1"></script>
+  <script src="assets/js/social-modal.js?v=7"></script>
+</body>
+</html>
